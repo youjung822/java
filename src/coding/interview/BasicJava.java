@@ -3,7 +3,7 @@ package coding.interview;
 public class BasicJava {
     public static void main(String[] args){
         int a =5, b=7;
-
+        //Comment Test
         //The ? : operator(Ternary) in Java
         System.out.println((a > b) ? "Result is \"True\"" :"Result is \"False\"");
 
