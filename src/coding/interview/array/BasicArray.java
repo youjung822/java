@@ -12,13 +12,29 @@ In case of objects of a class, the actual objects are stored in ==> heap segment
 [References]
 https://www.javatpoint.com/array-in-java
 
+[Remember]
+** String -> char[]
+char[] arrOrig = strOrig.toCharArray();
+
+** char[] -> String
+String origString = String.valueOf(arrOrig)
+String str = new String(arrOrig);
+
+** for(int k :b){}//ForEach
+
+** ArrayPortion copy
+System.arraycopy(orig,2,copyTo,0,5);
+
+**Clone
+char[] arrCloned = arrOrig.clone();
+
 * */
 
 import java.io.Serializable;
 import java.util.HashMap;
 
-public class Basic {
-    public Basic(){
+public class BasicArray {
+    public BasicArray(){
 
     }
 
@@ -139,10 +155,10 @@ public class Basic {
 
         //anonymous inner class
         System.out.println("\nAnonymous inner class name and type");
-        System.out.println(new Serializable(){}.getClass().getName());//output: coding.interview.array.Basic$1
+        System.out.println(new Serializable(){}.getClass().getName());//output: coding.interview.array.BasicArray$1
         System.out.println(new Serializable(){}.getClass().getCanonicalName()); //output: null
         System.out.println(new Serializable(){}.getClass().getSimpleName()); // output: (none)
-        System.out.println(new Serializable(){}.getClass().getTypeName());// output:coding.interview.array.Basic$4
+        System.out.println(new Serializable(){}.getClass().getTypeName());// output:coding.interview.array.BasicArray$4
     }
 
     private static String copyPartialArray(){
@@ -166,6 +182,12 @@ public class Basic {
     private static String cloneArray(String strOrig){
         char[] arrOrig = strOrig.toCharArray();
         char[] arrCloned = arrOrig.clone();//** Remember
+        //arrCloned.toString();
+        //arrCloned.clone();
+        //arrCloned.equals(arrOrig);
+        //arrCloned.hashCode();//?
+        //arrCloned.notify();//?
+        //arrCloned.wait();//?
 
         return String.valueOf(arrCloned); //** Remember
     }

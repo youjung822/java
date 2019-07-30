@@ -33,7 +33,7 @@ public class reverseAnArray {
             //Check if the character is special
             // true -> locate it its own
             // false -> locate it reversal side
-           /* if(c.matches("^[a-zA-Z]*$")){
+            /*if(c.matches("^[a-zA-Z]*$")){
                 arrReversed[i] = c;
             } else {
                 arrReversed[arrOrig.length-i-1] = c;
