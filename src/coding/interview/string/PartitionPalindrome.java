@@ -1,7 +1,7 @@
 package coding.interview.string;
 
 public class PartitionPalindrome {
-    /*
+    /* https://www.geeksforgeeks.org/palindrome-partitioning-dp-17/
     * Given a string, a partitioning of the string is a palindrome partitioning
     * if every substring of the partition is a palindrome. For example,
     * “aba|b|bbabb|a|b|aba” is a palindrome partitioning of “ababbbabbababa”.

@@ -6,7 +6,8 @@ import java.util.Deque;
 import java.util.LinkedList;
 
 public class PrintPalindromicPartitions {
-   /* Given a string, print all possible palindromic partitions.
+   /* https://www.geeksforgeeks.org/given-a-string-print-all-possible-palindromic-partition/
+    Given a string, print all possible palindromic partitions.
      cf: A palindrome is a word, number, phrase, or other sequence
       of characters which reads the same backward as forward,
       such as madam or racecar or the number 10801.
