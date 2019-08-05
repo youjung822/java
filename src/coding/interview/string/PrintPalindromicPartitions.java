@@ -93,7 +93,7 @@ public class PrintPalindromicPartitions {
             for(int j=i+1; j<strOrig.length()+1; j++){
                 char[] arrPortion = new char[j-i];
                 System.arraycopy(arrOrig,i,arrPortion,0,j-i);//**Remember;
-                char[] arrOpposite= reverseArray(arrPortion);
+                char[] arrOpposite= ReverseArray(arrPortion);
                // System.out.println("i: "+i+" j: "+j+ " strPortion: "+String.valueOf(arrPortion)+" strOpsite: "+ String.valueOf(arrOpposite));
                 if(String.valueOf(arrPortion).equals(String.valueOf(arrOpposite))){
                     System.out.println(String.valueOf(arrPortion));
@@ -103,7 +103,7 @@ public class PrintPalindromicPartitions {
         }
 
     }
-    public static char[] reverseArray(char[] orig){
+    public static char[] ReverseArray(char[] orig){
         char[] reversed = new char[orig.length];
         for(int i = 0; i < orig.length; i++){
             reversed[i] = orig[orig.length-1-i];

@@ -19,7 +19,7 @@ Output:  str = "ed,c,bA!$"
 
 */
 
-public class reverseAnArray {
+public class ReverseAnArrayWOSpecialCh {
     public static void main(String[] args){
         String strOrig = "a,b$c";
         //Spilt the string into array
